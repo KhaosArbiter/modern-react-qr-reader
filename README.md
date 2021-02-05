@@ -10,6 +10,8 @@ This repositorys goal is to be an updated version of the project at https://gith
 
 ## Demo
 
+Note: This demo link will be removed or updated once this project has split sufficiently from the original codebase at https://github.com/JodusNodus/react-qr-reader
+
 [https://jodusnodus.github.io/react-qr-reader](https://jodusnodus.github.io/react-qr-reader)
 
 ## Known Issues
