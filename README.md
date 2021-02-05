@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/react-qr-reader.svg)](https://badge.fury.io/js/react-qr-reader)
+[![npm version](https://badge.fury.io/js/modern-react-qr-reader.svg)](https://badge.fury.io/js/modern-react-qr-reader)
 
 ## Introduction
 
