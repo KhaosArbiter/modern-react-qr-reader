@@ -49,6 +49,7 @@ class Test extends Component {
       <div>
         <QrReader
           delay={300}
+          facingMode={"environment"}
           onError={this.handleError.bind(this)}
           onScan={this.handleScan.bind(this)}
           style={{ width: '100%' }}
