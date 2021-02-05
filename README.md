@@ -38,9 +38,7 @@ class Test extends Component {
 
   handleScan = data => {
     if (data) {
-      this.setState({
-        result: data
-      })
+      this.state.result = data;
     }
   }
   handleError = err => {
@@ -51,8 +49,8 @@ class Test extends Component {
       <div>
         <QrReader
           delay={300}
-          onError={this.handleError}
-          onScan={this.handleScan}
+          onError={this.handleError.bind(this)}
+          onScan={this.handleScan.bind(this)}
           style={{ width: '100%' }}
         />
         <p>{this.state.result}</p>
