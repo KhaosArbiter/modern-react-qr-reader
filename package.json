@@ -1,6 +1,6 @@
 {
   "name": "modern-react-qr-reader",
-  "version": "1.0.1",
+  "version": "1.0.10",
   "description": "A react component for reading QR codes from the webcam.  This is a modernized version of the JodusNodus package",
   "main": "./lib/index.js",
   "scripts": {
