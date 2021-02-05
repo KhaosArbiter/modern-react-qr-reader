@@ -21,7 +21,7 @@ This repositorys goal is to be an updated version of the project at https://gith
 
 ## Install
 
-`npm install --save react-qr-reader`
+`npm install --save modern-react-qr-reader`
 
 ## Example
 
