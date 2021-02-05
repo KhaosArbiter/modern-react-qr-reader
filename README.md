@@ -32,9 +32,16 @@ import React, { Component } from 'react'
 import QrReader from 'modern-react-qr-reader'
 
 class Test extends Component {
-  state = {
-    result: 'No result'
-  }
+  constructor(props) {
+        super(props);
+
+        this.state = {
+            result: 'No result'
+        }
+
+        this.handleError = this.handleError.bind(this);
+        this.handleScan = this.handleScan.bind(this);
+    }
 
   handleScan = data => {
     if (data) {
@@ -50,8 +57,8 @@ class Test extends Component {
         <QrReader
           delay={300}
           facingMode={"environment"}
-          onError={this.handleError.bind(this)}
-          onScan={this.handleScan.bind(this)}
+          onError={this.handleError}
+          onScan={this.handleScan}
           style={{ width: '100%' }}
         />
         <p>{this.state.result}</p>
