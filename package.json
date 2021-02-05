@@ -1,7 +1,7 @@
 {
-  "name": "react-qr-reader",
-  "version": "2.2.1",
-  "description": "A react component for reading QR codes from the webcam.",
+  "name": "modern-react-qr-reader",
+  "version": "1.0.0",
+  "description": "A react component for reading QR codes from the webcam.  This is a modernized version of the JodusNodus package",
   "main": "./lib/index.js",
   "scripts": {
     "start": "concurrently --kill-others \"npm run build:watch\" \"npm run storybook\"",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JodusNodus/react-qr-reader.git"
+    "url": "git+https://github.com/KhaosArbiter/modern-react-qr-reader"
   },
   "keywords": [
     "react",
@@ -20,12 +20,12 @@
     "qrcode",
     "qrreader"
   ],
-  "author": "thomas billiet",
+  "author": "Darrell Tripp",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JodusNodus/react-qr-reader/issues"
+    "url": "https://github.com/KhaosArbiter/modern-react-qr-reader/issues"
   },
-  "homepage": "https://github.com/JodusNodus/react-qr-reader#readme",
+  "homepage": "https://github.com/KhaosArbiter/modern-react-qr-reader#readme",
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-links": "^3.4.11",

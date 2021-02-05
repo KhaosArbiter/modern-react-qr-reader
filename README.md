@@ -27,7 +27,7 @@ This repositorys goal is to be an updated version of the project at https://gith
 
 ```js
 import React, { Component } from 'react'
-import QrReader from 'react-qr-reader'
+import QrReader from 'modern-react-qr-reader'
 
 class Test extends Component {
   state = {
