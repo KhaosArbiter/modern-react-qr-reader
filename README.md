@@ -39,6 +39,9 @@ class Test extends Component {
   handleScan = data => {
     if (data) {
       this.state.result = data;
+        console.log(this.state.result);
+        this.setState({result: data});
+
     }
   }
   handleError = err => {
