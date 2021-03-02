@@ -48,12 +48,13 @@ class Test extends Component {
       this.state.result = data;
         console.log(this.state.result);
         this.setState({result: data});
-
     }
   }
+  
   handleError = err => {
     console.error(err)
   }
+  
   render() {
     return (
       <div>
