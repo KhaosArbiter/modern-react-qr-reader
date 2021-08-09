@@ -120,6 +120,8 @@ module.exports = class Reader extends Component {
     this.clearComponent()
   }
   clearComponent() {
+    // Flag stream to stop
+    this.shouldStop = true
     // Remove all event listeners and variables
     if (this.timeout) {
       clearTimeout(this.timeout)
@@ -143,8 +145,9 @@ module.exports = class Reader extends Component {
     const isFirefox = /firefox/i.test(navigator.userAgent);
     const isSafari = !!navigator.userAgent.match(/Version\/[\d/]+.*Safari/);
 
+    let supported = {}
     if (navigator.mediaDevices && typeof navigator.mediaDevices.getSupportedConstraints === 'function') {
-      const supported = navigator.mediaDevices.getSupportedConstraints()
+      supported = navigator.mediaDevices.getSupportedConstraints()
     }
     const constraints = {}
 
@@ -171,6 +174,14 @@ module.exports = class Reader extends Component {
   handleVideo(stream) {
     const { preview } = this.els
     const { facingMode } = this.props
+
+    // Stop stream if we've been asked to
+    if (this.shouldStop) {
+      const streamTrackToStop = stream.getTracks()[0]
+      setTimeout(() => {
+        streamTrackToStop.stop();
+      }, 2000);
+    }
 
     // Preview element hasn't been rendered so wait for it.
     if (!preview) {
